@@ -1,0 +1,73 @@
+version: "3"
+
+services:
+  # api gateway
+  graphql-gateway:
+    image: chocolab/graphql-gateway
+    environment:
+      - BROKER=nats://nats:4222
+    ports:
+      - 5000:5000
+    links:
+      - nats
+
+  activity:
+    image: chocolab/activity
+    environment:
+      - MONGO=mongodb://mongo/choco
+      - BROKER=nats://nats:4222
+    links:
+      - mongo
+      - nats
+  
+  # algorithm:
+  #   image: chocolab/algorithm
+  #   ports:
+  #     - 3000:3000
+
+  authenticator:
+    image: chocolab/authenticator
+    environment:
+      - MONGO=mongodb://mongo/choco
+      - BROKER=nats://nats:4222
+      - SECRET=Konan
+    links:
+      - mongo
+      - nats
+
+  cache:
+    image: chocolab/cache
+    environment:
+      - REDIS=redis://redis/
+      - BROKER=nats://nats:4222
+    links:
+      - mongo
+      - nats
+
+  projects:
+    image: chocolab/projects
+    environment:
+      - MONGO=mongodb://mongo/choco
+      - BROKER=nats://nats:4222
+    links:
+      - mongo
+      - nats
+
+  world-cities-seed:
+    image: chocolab/world-cities-seed
+    environment:
+      - HOST=mongo
+    links:
+      - mongo
+
+  mongo:
+    image: mongo
+    volumes:
+      - data:/data/db
+    ports:
+      - 27017:27017
+  
+volumes:
+  data:
+  letsencrypt:
+  certbot:
