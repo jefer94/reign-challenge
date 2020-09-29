@@ -5,6 +5,9 @@
   "repository": "git@gitlab.com:jefer94/reign-challenge.git",
   "author": "jefer94 <jdefreitaspinto@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "lint": "yarn eslint ./web/src/**/*.tsx ./api/src/**/*.ts ./populate-posts/src/**/*.ts"
   },

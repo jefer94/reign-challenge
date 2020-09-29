@@ -1,8 +1,12 @@
 {
   "name": "populate-posts",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
   "dependencies": {
     "@types/mongoose": "^5.7.36",
     "@types/node": "^14.11.2",
