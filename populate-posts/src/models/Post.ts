@@ -24,7 +24,7 @@ const schema = new Schema({
   created_at: { type: Date, required: true },
   title: { type: String },
   url: { type: String },
-  author: { type: Date, required: true },
+  author: { type: String, required: true },
   points: { type: Number },
   story_text: { type: String },
   comment_text: { type: String },
@@ -36,6 +36,6 @@ const schema = new Schema({
   created_at_i: { type: Number, required: true },
   _tags: [{ type: String }],
   objectID: { type: Number, required: true, unique: true }
-}, { versionKey: false, _id: false })
+}, { versionKey: false })
 
 export const Post = model<PostDocument>('Post', schema)

@@ -1,62 +1,26 @@
 version: "3"
 
 services:
-  # api gateway
-  graphql-gateway:
-    image: chocolab/graphql-gateway
+  api:
+    image: reign/api
     environment:
-      - BROKER=nats://nats:4222
+      - MONGO=mongodb://mongo/reign
     ports:
       - 5000:5000
     links:
-      - nats
-
-  activity:
-    image: chocolab/activity
-    environment:
-      - MONGO=mongodb://mongo/choco
-      - BROKER=nats://nats:4222
-    links:
       - mongo
-      - nats
-  
-  # algorithm:
-  #   image: chocolab/algorithm
-  #   ports:
-  #     - 3000:3000
 
-  authenticator:
-    image: chocolab/authenticator
+  web:
+    image: reign/web
     environment:
-      - MONGO=mongodb://mongo/choco
-      - BROKER=nats://nats:4222
-      - SECRET=Konan
-    links:
-      - mongo
-      - nats
+      - MONGO=mongodb://mongo/reign
+    ports:
+      - 3000:3000
 
-  cache:
-    image: chocolab/cache
+  populate-posts:
+    image: reign/populate-posts
     environment:
-      - REDIS=redis://redis/
-      - BROKER=nats://nats:4222
-    links:
-      - mongo
-      - nats
-
-  projects:
-    image: chocolab/projects
-    environment:
-      - MONGO=mongodb://mongo/choco
-      - BROKER=nats://nats:4222
-    links:
-      - mongo
-      - nats
-
-  world-cities-seed:
-    image: chocolab/world-cities-seed
-    environment:
-      - HOST=mongo
+      - MONGO=mongodb://mongo/reign
     links:
       - mongo
 

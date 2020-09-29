@@ -10,6 +10,6 @@ export function clearCollections(): void {
 }
 
 /** Database connection. */
-export default function db(connection = 'mongodb://localhost/choco'): Promise<typeof mongoose> {
+export default function db(connection = 'mongodb://localhost/reign'): Promise<typeof mongoose> {
   return mongoose.connect(connection, { useNewUrlParser: true, useUnifiedTopology: true })
 }
