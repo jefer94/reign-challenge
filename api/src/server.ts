@@ -1,11 +1,10 @@
 import express from 'express'
-// import { rootHandler, helloHandler } from './handlers'
+import postRoute from './routes/postRoute'
 
 const app = express()
 const port = process.env.PORT || '5000'
 
-// app.get('/', rootHandler)
-// app.get('/hello/:name', helloHandler)
+app.use('/posts', postRoute)
 
 export default function serve(): void {
   app.listen(port, () => {
