@@ -1,16 +1,14 @@
-# Todo
-
 ## General
 
 - [ ] Small web application
-- [ ] Wireframe
+- [X] Wireframe
 - [ ] The app should have two separate components: the Server and the Client.
 - [ ] Lists the articles in chronological order.
 
 ## Server
 
-- [ ] Once an hour, save https://hn.algolia.com/api/v1/search_by_date?query=nodejs to Mongo
-- [ ] Rest API
+- [X] Once an hour, save https://hn.algolia.com/api/v1/search_by_date?query=nodejs to Mongo
+- [X] Rest API
 
 ## Client
 
@@ -19,16 +17,16 @@
 
 ## Stack
 
-- [ ] Express/Koa
+- [X] Express/Koa
 - [ ] Angular + Angular Material or React + Material-ui
 
 ## Considerations
 
 - [ ] Node.js version >= 8
 - [ ] At least 30% test coverage (statements) for the server component
-- [ ] The whole project has to be uploaded to GitLab
+- [X] The whole project has to be uploaded to GitLab
 - [ ] Both artifacts (server and client) have to be Dockerized
-- [ ] To start the project there should be a docker-compose that uses both images and the
+- [X] To start the project there should be a docker-compose that uses both images and the
 MongoDB image.
 
 ## Extras
