@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react'
+import { ReactElement, useState, Fragment } from 'react'
 import { Divider, List, ListItem, ListItemText, ListItemSecondaryAction, IconButton } from '@material-ui/core'
 import DeleteIcon from '@material-ui/icons/Delete'
 import ShortDate from './ShortDate'
@@ -24,16 +24,17 @@ export type Post = {
 }
 
 type PostListProps = {
-  readonly posts: readonly Post[]
+  readonly posts?: readonly Post[]
+  readonly remove: (id: number) => void
 }
 
-export default function Home({ posts = [] }: PostListProps): ReactElement {
+export default function Home({ posts = [], remove }: PostListProps): ReactElement {
   const [selected, setSelected] = useState(-1)
   return (
     <div className={style.container}>
       <List className={style.list}>
-        {posts.map(({ storyTitle, title, author, createdAt }, index, arr) => (
-          <>
+        {posts.map(({ storyTitle, title, author, createdAt, objectID }, index, arr) => (
+          <Fragment key={objectID}>
             <ListItem
               className={index === selected ? style.listItemHover : ''}
               onMouseEnter={() => setSelected(index)}
@@ -46,14 +47,14 @@ export default function Home({ posts = [] }: PostListProps): ReactElement {
               <ListItemSecondaryAction onMouseEnter={() => setSelected(index)}>
                 <ShortDate date={createdAt} isHover={index === selected} />
                 {index === selected ? (
-                  <IconButton edge="end" aria-label="delete">
+                  <IconButton edge="end" aria-label="delete" onClick={() => remove(objectID)}>
                     <DeleteIcon />
                   </IconButton>
                 ) : <></>}
               </ListItemSecondaryAction>
             </ListItem>
             {index < arr.length - 1 ? <Divider className={style.separator} /> : <></>}
-          </>
+          </Fragment>
         ))}
       </List>
     </div>

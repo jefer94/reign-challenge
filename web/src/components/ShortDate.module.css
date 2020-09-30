@@ -3,6 +3,8 @@
   margin-right: 76px;
   line-height: 68px;
   font-size: 17px;
+  width: 70px;
+  display: inline-block!important;
 }
 
 .dateHover {
@@ -10,4 +12,6 @@
   margin-right: 40px;
   line-height: 68px;
   font-size: 17px;
+  width: 70px;
+  display: inline-block!important;
 }
