@@ -12,7 +12,6 @@ eslint:
   script:
     - yarn
     - yarn lint
-    - yarn test:p2p:headless
 
 cypress:
   stage: cypress
