@@ -17,7 +17,8 @@
     "docker:mongo": "docker-compose up -d mongo",
     "test:api": "yarn docker:mongo && cd api && yarn test",
     "test:p2p": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:open",
-    "test:p2p:headless": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:run"
+    "test:p2p:headless": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:run",
+    "ci:p2p:headless": "yarn run-p --race dev:api dev:web cypress:run"
   },
   "devDependencies": {
     "@chocolab/configs": "^1.0.2-alpha.0",

@@ -1,5 +1,8 @@
 image: node:latest
 
+services:
+  - mongo
+
 stages:
   - lint
   - cypress
@@ -21,4 +24,4 @@ cypress:
     - cd web
     - yarn
     - cd ..
-    - yarn test:p2p:headless
+    - yarn ci:p2p:headless
