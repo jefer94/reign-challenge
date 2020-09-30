@@ -11,6 +11,7 @@
   "scripts": {
     "lint": "yarn eslint ./web/src/**/*.tsx ./api/src/**/*.ts ./populate-posts/src/**/*.ts",
     "dev:api": "yarn docker:mongo && cd api && yarn dev:cypress",
+    "ci:api": "cd api && yarn dev:cypress",
     "dev:web": "cd web && yarn dev",
     "cypress:open": "wait-on http://localhost:3000 && cd web && yarn cypress open",
     "cypress:run": "wait-on http://localhost:3000 && cd web && yarn cypress run",
@@ -18,7 +19,7 @@
     "test:api": "yarn docker:mongo && cd api && yarn test",
     "test:p2p": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:open",
     "test:p2p:headless": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:run",
-    "ci:p2p:headless": "yarn run-p --race dev:api dev:web cypress:run"
+    "ci:p2p:headless": "yarn run-p --race ci:api dev:web cypress:run"
   },
   "devDependencies": {
     "@chocolab/configs": "^1.0.2-alpha.0",
