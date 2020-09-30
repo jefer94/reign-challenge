@@ -1,21 +1,6 @@
-image: node:latest
-
-services:
-  - mongo
-
-stages:
-  - lint
-  - cypress
-
-eslint:
-  stage: lint
-  script:
-    - yarn
-    - yarn lint
-
-cypress:
-  stage: cypress
-  script:
+default:
+  image: node:alpine
+  before_script:
     - yarn
     - cd api
     - yarn
@@ -23,4 +8,15 @@ cypress:
     - cd web
     - yarn
     - cd ..
+
+services:
+  - mongo
+
+eslint:
+  script:
+    - yarn
+    - yarn lint
+
+cypress:
+  script:
     - yarn ci:p2p:headless
