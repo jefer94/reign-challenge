@@ -12,8 +12,8 @@
     "lint": "yarn eslint ./web/src/**/*.tsx ./api/src/**/*.ts ./populate-posts/src/**/*.ts",
     "dev:api": "yarn docker:mongo && cd api && yarn dev:cypress",
     "dev:web": "cd web && yarn dev",
-    "cypress:open": "cd web && yarn cypress open",
-    "cypress:run": "cd web && yarn cypress run",
+    "cypress:open": "wait-on http://localhost:3000 && cd web && yarn cypress open",
+    "cypress:run": "wait-on http://localhost:3000 && cd web && yarn cypress run",
     "docker:mongo": "docker-compose up -d mongo",
     "test:api": "yarn docker:mongo && cd api && yarn test",
     "test:p2p": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:open",
@@ -34,6 +34,7 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-tsdoc": "^0.2.7",
     "npm-run-all": "^4.1.5",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "wait-on": "^5.2.0"
   }
 }
