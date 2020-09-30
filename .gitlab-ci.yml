@@ -1,12 +1,18 @@
 image: node:latest
 
 stages:
-  - deps
   - lint
   - cypress
 
-deps:
-  stage: deps
+eslint:
+  stage: lint
+  script:
+    - yarn
+    - yarn lint
+    - yarn test:p2p:headless
+
+cypress:
+  stage: cypress
   script:
     - yarn
     - cd api
@@ -15,14 +21,4 @@ deps:
     - cd web
     - yarn
     - cd ..
-
-eslint:
-  stage: lint
-  script:
-    - yarn lint
-    - yarn test:p2p:headless
-
-cypress:
-  stage: cypress
-  script:
     - yarn test:p2p:headless
