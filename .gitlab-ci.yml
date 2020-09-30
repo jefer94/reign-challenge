@@ -6,4 +6,6 @@ stages:
 eslint:
   stage: lint
   script:
+    - yarn
     - yarn lint
+    - yarn test:p2p:headless
