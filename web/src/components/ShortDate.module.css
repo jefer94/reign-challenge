@@ -1,0 +1,13 @@
+.date {
+  color: #333;
+  margin-right: 76px;
+  line-height: 68px;
+  font-size: 17px;
+}
+
+.dateHover {
+  color: #333;
+  margin-right: 40px;
+  line-height: 68px;
+  font-size: 17px;
+}

@@ -1,0 +1,38 @@
+.container {
+  margin: 0 20px;
+}
+
+.list span, .list p {
+  display: inline;
+  font-size: 17px;
+}
+
+.list span {
+  color: #333;
+}
+
+.list p {
+  color: #999;
+}
+
+.listItemHover {
+  background-color: #fafafa;
+}
+
+.date {
+  color: #333;
+  margin-right: 76px;
+  line-height: 68px;
+  font-size: 17px;
+}
+
+.dateHover {
+  color: #333;
+  margin-right: 40px;
+  line-height: 68px;
+  font-size: 17px;
+}
+
+.separator {
+  background-color: #ccc!important;
+}

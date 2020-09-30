@@ -9,7 +9,13 @@
     "node": ">=8"
   },
   "scripts": {
-    "lint": "yarn eslint ./web/src/**/*.tsx ./api/src/**/*.ts ./populate-posts/src/**/*.ts"
+    "lint": "yarn eslint ./web/src/**/*.tsx ./api/src/**/*.ts ./populate-posts/src/**/*.ts",
+    "dev:api": "yarn docker:mongo && cd api && yarn dev",
+    "dev:web": "cd web && yarn dev",
+    "cypress:open": "cd web && yarn cypress open",
+    "docker:mongo": "docker-compose up -d mongo",
+    "test:api": "yarn docker:mongo && cd api && yarn test",
+    "test:p2p": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:open"
   },
   "devDependencies": {
     "@chocolab/configs": "^1.0.2-alpha.0",
@@ -25,6 +31,7 @@
     "eslint-plugin-react": "^7.21.2",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-tsdoc": "^0.2.7",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.0.3"
   }
 }
