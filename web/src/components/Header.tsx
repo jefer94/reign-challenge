@@ -12,7 +12,7 @@ export default function ShortDate({ title, subtitle }: HeaderProps): ReactElemen
     <header className={style.header}>
       <div>
         <Typography variant="h2" className={style.bold}>{title}</Typography>
-        <Typography variant="subtitle1" className={style.bold}>{subtitle}</Typography>
+        <Typography variant="subtitle1" component="p" className={style.bold}>{subtitle}</Typography>
       </div>
     </header>
   )

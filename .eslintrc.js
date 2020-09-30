@@ -116,7 +116,7 @@ function eslint({ next, types } = {}) {
       'functional/no-expression-statement': 0,
       'functional/no-try-statement': 0,
       'functional/no-throw-statement': 0,
-      'import/extensions': [2, 'never', { ts: 'never', tsx: 'never' }],
+      'import/extensions': [2, 'never', { ts: 'never', tsx: 'never', json: 'never' }],
       'import/no-unresolved': 0,
       'functional/no-mixed-type': 0,
       'react/prop-types': types ? 0 : 2,

@@ -20,12 +20,10 @@ export default function ShortDate({ date, isHover }: ShortDateProps): ReactEleme
     const minute = new Intl.DateTimeFormat('en', { minute: '2-digit' }).format(d)
     const hour = hourFormat.replace(/^(\d+) (AM|PM)/, '$1')
     const letters = hourFormat.replace(/^(\d+) (AM|PM)/, '$2')
-    console.log(hour)
-    console.log(minute)
-    console.log(d)
+
     return (
       <span className={isHover ? style.dateHover : style.date}>
-        {`${hour}:${minute} ${letters}`}
+        {`${hour}:${minute} ${letters.toLowerCase()}`}
       </span>
     )
   }

@@ -12,6 +12,7 @@
     "build:dev": "tsc --build ./tsconfig.json --watch",
     "start": "node ./dist/index.js",
     "dev": "nodemon -w ./src -i ./node_modules/ -x 'yarn build && yarn start'",
+    "dev:cypress": "NODE_ENV=cypress nodemon -w ./src -i ./node_modules/ -x 'yarn build && yarn start'",
     "test": "yarn jest --forceExit --passWithNoTests --detectOpenHandles --notify --preset ts-jest --testEnvironment node ./",
     "coverage": "yarn jest --coverage --forceExit --passWithNoTests --detectOpenHandles --notify --preset ts-jest --testEnvironment node ./"
   },

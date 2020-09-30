@@ -1,22 +1,12 @@
 import { Router } from 'express'
-// import bodyParser from 'body-parser'
 import { Post } from '../models/Post'
+// eslint-disable-next-line import/extensions
+import posts from '../seeds/posts.json'
 
 const router = Router()
 
-// // parse application/x-www-form-urlencoded
-// router.use(bodyParser.urlencoded({ extended: false }))
-
-// // parse application/json
-// router.use(bodyParser.json())
-
 router.get('/', async (req, res) => {
-  res.json(await Post.find({}))
+  res.json(process.env.NODE_ENV !== 'cypress' ? await Post.find({}) : posts)
 })
-
-// router.delete('/:objectID', async (req, res) => {
-//   const { objectID } = req.params
-//   res.json(await Post.find({}))
-// })
 
 export default router

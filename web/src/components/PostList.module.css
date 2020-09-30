@@ -2,6 +2,10 @@
   margin: 3px 20px 0 20px;
 }
 
+.list li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
 .list span, .list p {
   display: inline;
   font-size: 17px;
