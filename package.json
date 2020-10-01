@@ -17,6 +17,7 @@
     "cypress:run": "wait-on http://localhost:3000 && cd web && yarn cypress run",
     "cypress:ci": "wait-on http://localhost:3000 && cd web && yarn cypress run --record --key $CYPRESS_KEY",
     "docker:mongo": "docker-compose up -d mongo",
+    "docker:build": "./scripts/docker/build.sh",
     "test:api": "yarn docker:mongo && cd api && yarn test",
     "test:p2p": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:open",
     "test:p2p:headless": "yarn docker:mongo && yarn run-p --race dev:api dev:web cypress:run",
