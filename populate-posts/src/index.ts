@@ -1,5 +1,5 @@
-import fetchPosts from "./fetchPosts"
-import db from "./db"
+import fetchPosts from './fetchPosts'
+import db from './db'
 
 db(process.env.MONGO)
 fetchPosts()

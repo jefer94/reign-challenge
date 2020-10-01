@@ -1,0 +1,917 @@
+{
+  "hits": [
+    {
+      "created_at": "2020-09-30T08:50:11.000Z",
+      "title": "Five Years of Remote Work",
+      "url": "https://nodesk.co/blog/five-years-of-remote-work/",
+      "author": "sergeant3",
+      "points": 1,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1601455811,
+      "_tags": [
+        "story",
+        "author_sergeant3",
+        "story_24636769"
+      ],
+      "objectID": "24636769",
+      "_highlightResult": {
+        "title": {
+          "value": "Five Years of Remote Work",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "url": {
+          "value": "https://<em>nodes</em>k.co/blog/five-years-of-remote-work/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "author": {
+          "value": "sergeant3",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-30T00:17:27.000Z",
+      "title": null,
+      "url": null,
+      "author": "takeda",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I&#x27;ve been using some nodejs applications as tools to deploy other applications (for example serverless) and while it works it is the most trouble causing frameworks.<p>It absolutely has to created node_modules in center of your source code, and populate it with 120MB of files. If you want to just package it somehow so to make it more like cli tool (like you could do with awscli for example) then tough luck it will break in many weird ways.<p>It&#x27;s like the nodejs people threw out everything we learned in decades and are reinventing the wheel. Yes it works great if you have your own project in a single directory and working on it, but any other use case is a horrible experience.",
+      "num_comments": null,
+      "story_id": 24603926,
+      "story_title": "Create system diagrams with Go",
+      "story_url": "https://github.com/blushft/go-diagrams",
+      "parent_id": 24611726,
+      "created_at_i": 1601425047,
+      "_tags": [
+        "comment",
+        "author_takeda",
+        "story_24603926"
+      ],
+      "objectID": "24634563",
+      "_highlightResult": {
+        "author": {
+          "value": "takeda",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I've been using some <em>nodejs</em> applications as tools to deploy other applications (for example serverless) and while it works it is the most trouble causing frameworks.<p>It absolutely has to created node_modules in center of your source code, and populate it with 120MB of files. If you want to just package it somehow so to make it more like cli tool (like you could do with awscli for example) then tough luck it will break in many weird ways.<p>It's like the <em>nodejs</em> people threw out everything we learned in decades and are reinventing the wheel. Yes it works great if you have your own project in a single directory and working on it, but any other use case is a horrible experience.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Create system diagrams with Go",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://github.com/blushft/go-diagrams",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T23:30:45.000Z",
+      "title": null,
+      "url": null,
+      "author": "axbytg",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Looks like the main difference is docker compose compatibility but admittedly I have more reading to do. Still tho that is a good difference! I have multiple caprover nodes in prod for hobby stuff so absolutely not knocking it.",
+      "num_comments": null,
+      "story_id": 24632578,
+      "story_title": "Apollo – An Extensible Docker-Based Platform as a Service (PaaS)",
+      "story_url": "https://gitlab.com/p3r.one/apollo",
+      "parent_id": 24633725,
+      "created_at_i": 1601422245,
+      "_tags": [
+        "comment",
+        "author_axbytg",
+        "story_24632578"
+      ],
+      "objectID": "24634282",
+      "_highlightResult": {
+        "author": {
+          "value": "axbytg",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Looks like the main difference is docker compose compatibility but admittedly I have more reading to do. Still tho that is a good difference! I have multiple caprover <em>nodes</em> in prod for hobby stuff so absolutely not knocking it.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Apollo – An Extensible Docker-Based Platform as a Service (PaaS)",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://gitlab.com/p3r.one/apollo",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T21:17:52.000Z",
+      "title": null,
+      "url": null,
+      "author": "alexisread",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Spritely Goblins looks so good I&#x27;ll be pinching it at a later date!<p>I&#x27;d be keen to see what your thoughts are on transactional logs here- you&#x27;re using snapshots so technically you could do a transaction log, which in turn can be used to help resolve distributed remote call issues eg. if you have 2 nodes and a split-brain scenario you can use the transaction log with a (vector) clock and defined types to resolve the split when connectivity is restored.<p>Additionally, do you have any thoughts on GC of objects? I&#x27;d have thought that Object Capability Security would factor into this.",
+      "num_comments": null,
+      "story_id": 24613124,
+      "story_title": "Spritely – leveling up the federated social web",
+      "story_url": "https://spritelyproject.org/",
+      "parent_id": 24628309,
+      "created_at_i": 1601414272,
+      "_tags": [
+        "comment",
+        "author_alexisread",
+        "story_24613124"
+      ],
+      "objectID": "24633113",
+      "_highlightResult": {
+        "author": {
+          "value": "alexisread",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Spritely Goblins looks so good I'll be pinching it at a later date!<p>I'd be keen to see what your thoughts are on transactional logs here- you're using snapshots so technically you could do a transaction log, which in turn can be used to help resolve distributed remote call issues eg. if you have 2 <em>nodes</em> and a split-brain scenario you can use the transaction log with a (vector) clock and defined types to resolve the split when connectivity is restored.<p>Additionally, do you have any thoughts on GC of objects? I'd have thought that Object Capability Security would factor into this.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Spritely – leveling up the federated social web",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://spritelyproject.org/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T20:01:02.000Z",
+      "title": "Node.js – v14.13.0",
+      "url": "https://nodejs.org/en/blog/release/v14.13.0/",
+      "author": "bricss",
+      "points": 2,
+      "story_text": null,
+      "comment_text": null,
+      "num_comments": 0,
+      "story_id": null,
+      "story_title": null,
+      "story_url": null,
+      "parent_id": null,
+      "created_at_i": 1601409662,
+      "_tags": [
+        "story",
+        "author_bricss",
+        "story_24632253"
+      ],
+      "objectID": "24632253",
+      "_highlightResult": {
+        "title": {
+          "value": "Node.js – v14.13.0",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "url": {
+          "value": "https://<em>nodejs</em>.org/en/blog/release/v14.13.0/",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "author": {
+          "value": "bricss",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T18:28:04.000Z",
+      "title": null,
+      "url": null,
+      "author": "Taek",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Sia is a decentralization first protocol. We believe strongly that the biggest advantage is an immunity to de-platforming and a commitment to uncompromisingly open protocol.<p>Crypto is the only means of payment I am aware of that does not have a centralized middleman with the power to deny a transaction.<p>Decentralization aside, there are efficiency gains as well. Every transaction on the Sia network is point-to-point, and in some cases we&#x27;ve had nodes that average more than 1 million discreet transactions per day for over a month. The total cost of doing that was something like $100 (including the cost of all the resources bought with those millions of transactions), I struggle to imagine a traditional payment system providing that kind of value.<p>There&#x27;s also a lot more flexibility to innovate. For example, every single one of our payments is accompanied by a cryptographic proof that the accompanying storage or computation (not many people know, but the Sia network does support a limited form of computation) action was completed correctly. The payment and computation are fundamentally&#x2F;cryptographically tied together in way that we could not reasonably achieve on a traditional payment system.",
+      "num_comments": null,
+      "story_id": 24621276,
+      "story_title": "Nix × IPFS – Milestone 1",
+      "story_url": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+      "parent_id": 24629484,
+      "created_at_i": 1601404084,
+      "_tags": [
+        "comment",
+        "author_Taek",
+        "story_24621276"
+      ],
+      "objectID": "24631268",
+      "_highlightResult": {
+        "author": {
+          "value": "Taek",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Sia is a decentralization first protocol. We believe strongly that the biggest advantage is an immunity to de-platforming and a commitment to uncompromisingly open protocol.<p>Crypto is the only means of payment I am aware of that does not have a centralized middleman with the power to deny a transaction.<p>Decentralization aside, there are efficiency gains as well. Every transaction on the Sia network is point-to-point, and in some cases we've had <em>nodes</em> that average more than 1 million discreet transactions per day for over a month. The total cost of doing that was something like $100 (including the cost of all the resources bought with those millions of transactions), I struggle to imagine a traditional payment system providing that kind of value.<p>There's also a lot more flexibility to innovate. For example, every single one of our payments is accompanied by a cryptographic proof that the accompanying storage or computation (not many people know, but the Sia network does support a limited form of computation) action was completed correctly. The payment and computation are fundamentally/cryptographically tied together in way that we could not reasonably achieve on a traditional payment system.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Nix × IPFS – Milestone 1",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T17:24:59.000Z",
+      "title": null,
+      "url": null,
+      "author": "kev009",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Apple has had the performance per watt crown for quite some time.  These chips are not very good for anything outside of prototyping, otherwise hyperscalers would run a sea of small nodes.",
+      "num_comments": null,
+      "story_id": 24627745,
+      "story_title": "Xen Project officially ports its hypervisor to Raspberry Pi 4",
+      "story_url": "https://www.theregister.com/2020/09/29/xen_on_rpi_4/",
+      "parent_id": 24629548,
+      "created_at_i": 1601400299,
+      "_tags": [
+        "comment",
+        "author_kev009",
+        "story_24627745"
+      ],
+      "objectID": "24630523",
+      "_highlightResult": {
+        "author": {
+          "value": "kev009",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Apple has had the performance per watt crown for quite some time.  These chips are not very good for anything outside of prototyping, otherwise hyperscalers would run a sea of small <em>nodes</em>.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Xen Project officially ports its hypervisor to Raspberry Pi 4",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://www.theregister.com/2020/09/29/xen_on_rpi_4/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T15:35:09.000Z",
+      "title": null,
+      "url": null,
+      "author": "coder543",
+      "points": null,
+      "story_text": null,
+      "comment_text": "&gt; For our program to have taken &quot;several seconds, at a minimum&quot; to run would have been a failure case, so there would have been no value in benchmarking that, let alone optimizing for it. I expect the use cases are the same for this project, which is supposed to be processing untrusted scriptlets that need to finish in the smallest amount of wall clock time possible.<p>If the goal is to compare to NodeJS and Deno, which are largely used to write long-lived servers, then I disagree entirely.<p>Even if the main use case for Elsa were to build Lambda-esque services, I would again disagree. Services like that gain significant benefit from reusing a single instance of the program, rather than creating it from scratch over and over again. Even without a JIT, parsing the program over and over is a waste of time, and reusing an instance allows you to amortize that cost (and the cost of JIT) across a number of uses, rather than paying that price every time.<p>The benchmarks provided are extremely short, such as the one-liner benchmark I mentioned before, so for all we know, QuickJS is slower at parsing JavaScript than V8 is, and it would be slower at running &quot;real&quot; programs than V8, even though V8 has a JIT to deal with. This is without mentioning that V8 has a JIT-less mode, which the benchmarks aren&#x27;t comparing against, even though it might be more comparable.<p>The <i>only</i> use case for an 8 millisecond benchmark with startup penalty every time is interactive CLI tools, as you alluded to, and this is far from the expected use case I see described in the project.<p>But even then... the benchmarks showed that the startup time and total performance for V8 were comparable on the human scale. The difference between 8 milliseconds and 36 milliseconds is completely irrelevant to humans. It isn&#x27;t like V8 is taking 10 seconds to initialize or something. V8 is just running slower for a short period of time as it learns about what it is executing. If the CLI tool were doing more than a non-trivial amount of work, the V8 JIT would begin to accelerate past QuickJS.<p>So, the benchmarks are irrelevant for the CLI use case, and irrelevant for seemingly every use case that has been presented. If the benchmarks were showing that V8 could not complete these tasks in a reasonable amount of time, then they might be showing something useful.<p>These benchmarks are measuring the use case of interactive CLI tools that are written in a single line of JavaScript... which is a very specific use case that I don&#x27;t believe is intended to be the target market of the project.<p>I appreciate your anecdote, but this isn&#x27;t my first time thinking about benchmarks, and these benchmarks seem pretty seriously flawed to me. This is why I made my first comment, and your comment has done nothing to negate any of the reasoning that went into my first comment.",
+      "num_comments": null,
+      "story_id": 24626655,
+      "story_title": "Show HN: Elsa – A QuickJS wrapper written in Go",
+      "story_url": "https://github.com/elsaland/elsa",
+      "parent_id": 24628586,
+      "created_at_i": 1601393709,
+      "_tags": [
+        "comment",
+        "author_coder543",
+        "story_24626655"
+      ],
+      "objectID": "24629086",
+      "_highlightResult": {
+        "author": {
+          "value": "coder543",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "&gt; For our program to have taken &quot;several seconds, at a minimum&quot; to run would have been a failure case, so there would have been no value in benchmarking that, let alone optimizing for it. I expect the use cases are the same for this project, which is supposed to be processing untrusted scriptlets that need to finish in the smallest amount of wall clock time possible.<p>If the goal is to compare to <em>NodeJS</em> and Deno, which are largely used to write long-lived servers, then I disagree entirely.<p>Even if the main use case for Elsa were to build Lambda-esque services, I would again disagree. Services like that gain significant benefit from reusing a single instance of the program, rather than creating it from scratch over and over again. Even without a JIT, parsing the program over and over is a waste of time, and reusing an instance allows you to amortize that cost (and the cost of JIT) across a number of uses, rather than paying that price every time.<p>The benchmarks provided are extremely short, such as the one-liner benchmark I mentioned before, so for all we know, QuickJS is slower at parsing JavaScript than V8 is, and it would be slower at running &quot;real&quot; programs than V8, even though V8 has a JIT to deal with. This is without mentioning that V8 has a JIT-less mode, which the benchmarks aren't comparing against, even though it might be more comparable.<p>The <i>only</i> use case for an 8 millisecond benchmark with startup penalty every time is interactive CLI tools, as you alluded to, and this is far from the expected use case I see described in the project.<p>But even then... the benchmarks showed that the startup time and total performance for V8 were comparable on the human scale. The difference between 8 milliseconds and 36 milliseconds is completely irrelevant to humans. It isn't like V8 is taking 10 seconds to initialize or something. V8 is just running slower for a short period of time as it learns about what it is executing. If the CLI tool were doing more than a non-trivial amount of work, the V8 JIT would begin to accelerate past QuickJS.<p>So, the benchmarks are irrelevant for the CLI use case, and irrelevant for seemingly every use case that has been presented. If the benchmarks were showing that V8 could not complete these tasks in a reasonable amount of time, then they might be showing something useful.<p>These benchmarks are measuring the use case of interactive CLI tools that are written in a single line of JavaScript... which is a very specific use case that I don't believe is intended to be the target market of the project.<p>I appreciate your anecdote, but this isn't my first time thinking about benchmarks, and these benchmarks seem pretty seriously flawed to me. This is why I made my first comment, and your comment has done nothing to negate any of the reasoning that went into my first comment.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Show HN: Elsa – A QuickJS wrapper written in Go",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://github.com/elsaland/elsa",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T14:26:45.000Z",
+      "title": null,
+      "url": null,
+      "author": "chrismorgan",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Here’s the thing: each element needs to know what type its children are. Does it contain only text nodes, or can it contain elements? You <i>can’t</i> just put markup in a place that’s only equipped to handle text and expect it to do anything but explode in interesting ways. (“Interesting” as in “may you live in interesting times”.)<p>The same can be applied to other formats like JSON and YAML: if it contains only text, use a string, otherwise use an array of strings or objects of some defined structure. Here’s one possible representation:<p><pre><code>  {\n    &quot;tag&quot;: [\n      &quot;This text node contains &quot;,\n      {&quot;magic&quot;: &quot;unicorns&quot;},\n      &quot; and &quot;,\n      {&quot;magic&quot;: &quot;fairy dust&quot;},\n      &quot;.&quot;\n    ]\n  }\n</code></pre>\nSo I don’t consider what you describe to be a benefit of XML at all, except inasmuch as its syntax can be subjectively a little prettier.",
+      "num_comments": null,
+      "story_id": 24614404,
+      "story_title": "In Defense of XML",
+      "story_url": "https://blog.frankel.ch/defense-xml/",
+      "parent_id": 24626636,
+      "created_at_i": 1601389605,
+      "_tags": [
+        "comment",
+        "author_chrismorgan",
+        "story_24614404"
+      ],
+      "objectID": "24628224",
+      "_highlightResult": {
+        "author": {
+          "value": "chrismorgan",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Here’s the thing: each element needs to know what type its children are. Does it contain only text <em>nodes</em>, or can it contain elements? You <i>can’t</i> just put markup in a place that’s only equipped to handle text and expect it to do anything but explode in interesting ways. (“Interesting” as in “may you live in interesting times”.)<p>The same can be applied to other formats like JSON and YAML: if it contains only text, use a string, otherwise use an array of strings or objects of some defined structure. Here’s one possible representation:<p><pre><code>  {\n    &quot;tag&quot;: [\n      &quot;This text node contains &quot;,\n      {&quot;magic&quot;: &quot;unicorns&quot;},\n      &quot; and &quot;,\n      {&quot;magic&quot;: &quot;fairy dust&quot;},\n      &quot;.&quot;\n    ]\n  }\n</code></pre>\nSo I don’t consider what you describe to be a benefit of XML at all, except inasmuch as its syntax can be subjectively a little prettier.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "In Defense of XML",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.frankel.ch/defense-xml/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T14:09:49.000Z",
+      "title": null,
+      "url": null,
+      "author": "nsonha",
+      "points": null,
+      "story_text": null,
+      "comment_text": "if we are talking about code gen then it exists in every language, nothing extraordinary here. In nodejs, there is prisma for example. This typescript thing generates static type on the fly, not by generating code.",
+      "num_comments": null,
+      "story_id": 24615185,
+      "story_title": "Show HN: A SQL database implemented purely in TypeScript type annotations",
+      "story_url": "https://github.com/codemix/ts-sql",
+      "parent_id": 24617726,
+      "created_at_i": 1601388589,
+      "_tags": [
+        "comment",
+        "author_nsonha",
+        "story_24615185"
+      ],
+      "objectID": "24627998",
+      "_highlightResult": {
+        "author": {
+          "value": "nsonha",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "if we are talking about code gen then it exists in every language, nothing extraordinary here. In <em>nodejs</em>, there is prisma for example. This typescript thing generates static type on the fly, not by generating code.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Show HN: A SQL database implemented purely in TypeScript type annotations",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://github.com/codemix/ts-sql",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T14:05:12.000Z",
+      "title": null,
+      "url": null,
+      "author": "janci",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I see the main problem of XML in it&#x27;s model not matching the data model you usually work with. In code you work with arrays or structs&#x2F;objects that have members. Members can be other structs or arrays or primitive types. Arrays can be composed of structs, arrays or primitive types (sometimes heterogenous, but not very often).<p>This does not map to DOM at all, in any direction. In XML DOM you have structured nodes intermixed with text, order of nodes is significant (or may not be) and you have attributes. On top you have namespaces.<p>Indeed, you can restrict to subset of XML and find a mapping that works, guaranteed you will get a very verbose XML that is hard to work with.",
+      "num_comments": null,
+      "story_id": 24614404,
+      "story_title": "In Defense of XML",
+      "story_url": "https://blog.frankel.ch/defense-xml/",
+      "parent_id": 24627567,
+      "created_at_i": 1601388312,
+      "_tags": [
+        "comment",
+        "author_janci",
+        "story_24614404"
+      ],
+      "objectID": "24627944",
+      "_highlightResult": {
+        "author": {
+          "value": "janci",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I see the main problem of XML in it's model not matching the data model you usually work with. In code you work with arrays or structs/objects that have members. Members can be other structs or arrays or primitive types. Arrays can be composed of structs, arrays or primitive types (sometimes heterogenous, but not very often).<p>This does not map to DOM at all, in any direction. In XML DOM you have structured <em>nodes</em> intermixed with text, order of <em>nodes</em> is significant (or may not be) and you have attributes. On top you have namespaces.<p>Indeed, you can restrict to subset of XML and find a mapping that works, guaranteed you will get a very verbose XML that is hard to work with.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "In Defense of XML",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.frankel.ch/defense-xml/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T12:31:38.000Z",
+      "title": null,
+      "url": null,
+      "author": "akerro",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I started moving images of my wordpress blog to ipfs using 3 most popular gateways. I&#x27;m moving slowly, image by image, but so far it was quite a success. As images expire from the gateways I had super simple and cheap IPFS nodes - unused raspberry pi! My main IPFS node is RPi 0W (the wireless one). It overall dropped my main page loading times, and it costs £5 (rpi) + £5 32Gb sd card. First images - the smallest and most often loaded few were migrated 7 months ago.<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;claudiobizzotto&#x2F;ipfs-rpi\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;claudiobizzotto&#x2F;ipfs-rpi</a>",
+      "num_comments": null,
+      "story_id": 24621276,
+      "story_title": "Nix × IPFS – Milestone 1",
+      "story_url": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+      "parent_id": 24626496,
+      "created_at_i": 1601382698,
+      "_tags": [
+        "comment",
+        "author_akerro",
+        "story_24621276"
+      ],
+      "objectID": "24626899",
+      "_highlightResult": {
+        "author": {
+          "value": "akerro",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I started moving images of my wordpress blog to ipfs using 3 most popular gateways. I'm moving slowly, image by image, but so far it was quite a success. As images expire from the gateways I had super simple and cheap IPFS <em>nodes</em> - unused raspberry pi! My main IPFS node is RPi 0W (the wireless one). It overall dropped my main page loading times, and it costs £5 (rpi) + £5 32Gb sd card. First images - the smallest and most often loaded few were migrated 7 months ago.<p><a href=\"https://github.com/claudiobizzotto/ipfs-rpi\" rel=\"nofollow\">https://github.com/claudiobizzotto/ipfs-rpi</a>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Nix × IPFS – Milestone 1",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-29T11:52:13.000Z",
+      "title": null,
+      "url": null,
+      "author": "the_duke",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I imagine you would ensure the persistence of the data you care about by either running your own IPFS nodes that pin the data, or by using a pinning service like Pinata [1].<p>[1] <a href=\"https:&#x2F;&#x2F;pinata.cloud&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pinata.cloud&#x2F;</a>",
+      "num_comments": null,
+      "story_id": 24621276,
+      "story_title": "Nix × IPFS – Milestone 1",
+      "story_url": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+      "parent_id": 24626496,
+      "created_at_i": 1601380333,
+      "_tags": [
+        "comment",
+        "author_the_duke",
+        "story_24621276"
+      ],
+      "objectID": "24626531",
+      "_highlightResult": {
+        "author": {
+          "value": "the_duke",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I imagine you would ensure the persistence of the data you care about by either running your own IPFS <em>nodes</em> that pin the data, or by using a pinning service like Pinata [1].<p>[1] <a href=\"https://pinata.cloud/\" rel=\"nofollow\">https://pinata.cloud/</a>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Nix × IPFS – Milestone 1",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://blog.ipfs.io/2020-09-08-nix-ipfs-milestone-1/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-28T19:32:22.000Z",
+      "title": null,
+      "url": null,
+      "author": "jchook",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I built a simple node JS server to use as my default search engine. What you describe could be a 2-line change to my code.<p>My motivation was using Google &quot;I&#x27;m Feeling Lucky&quot; without JS. The node app detects the &quot;!lucky&quot; bang, downloads the search results, finds the first link, and redirects to it.<p>Let me know if it interests you.",
+      "num_comments": null,
+      "story_id": 24618447,
+      "story_title": "Show HN: All duckduckgo bang operators on one page (metasearch tool)",
+      "story_url": "https://mosermichael.github.io/duckduckbang/html/main.html",
+      "parent_id": 24619956,
+      "created_at_i": 1601321542,
+      "_tags": [
+        "comment",
+        "author_jchook",
+        "story_24618447"
+      ],
+      "objectID": "24620391",
+      "_highlightResult": {
+        "author": {
+          "value": "jchook",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I built a simple <em>node JS</em> server to use as my default search engine. What you describe could be a 2-line change to my code.<p>My motivation was using Google &quot;I'm Feeling Lucky&quot; without JS. The node app detects the &quot;!lucky&quot; bang, downloads the search results, finds the first link, and redirects to it.<p>Let me know if it interests you.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Show HN: All duckduckgo bang operators on one page (metasearch tool)",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://mosermichael.github.io/duckduckbang/html/main.html",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-27T15:41:49.000Z",
+      "title": null,
+      "url": null,
+      "author": "Fileformat",
+      "points": null,
+      "story_text": null,
+      "comment_text": "My original side project was a logo search website [1], but I realized that it would work for other types of images besides logos.  And I had a lot of bookmarks to SVG icons repositories.  And I found a great domain name (seriously: are the domainers asleep?).  So allow me to introduce IconSear.ch!<p>I wrote it in NodeJS&#x2F;Koa with server-side full-text search using Lunr.js, running on Google CloudRun.  Source and full list of credits: [2]<p>The index of icons is in a separate repo [3].  Contributions welcome!  Right now, all the sources are on github or gitlab, but it could support any website that can publish in the index format and allows hotlinking.<p>I know there are a ton of almost identical icon search websites (my list: [4]), and while mine is infinitely superior and perfect, I&#x27;m still interested in what you think!<p>[1] <a href=\"https:&#x2F;&#x2F;logosear.ch&#x2F;search.html\" rel=\"nofollow\">https:&#x2F;&#x2F;logosear.ch&#x2F;search.html</a><p>[2] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;VectorLogoZone&#x2F;logosearch#credits\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;VectorLogoZone&#x2F;logosearch#credits</a><p>[3] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;VectorLogoZone&#x2F;git-svg-icons\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;VectorLogoZone&#x2F;git-svg-icons</a><p>[4] <a href=\"https:&#x2F;&#x2F;iconsear.ch&#x2F;alternatives&#x2F;index.html\" rel=\"nofollow\">https:&#x2F;&#x2F;iconsear.ch&#x2F;alternatives&#x2F;index.html</a>",
+      "num_comments": null,
+      "story_id": 24607452,
+      "story_title": "Show HN: Instant SVG icon search with over 50K+ icons indexed",
+      "story_url": "https://iconsear.ch/search.html",
+      "parent_id": 24607452,
+      "created_at_i": 1601221309,
+      "_tags": [
+        "comment",
+        "author_Fileformat",
+        "story_24607452"
+      ],
+      "objectID": "24607453",
+      "_highlightResult": {
+        "author": {
+          "value": "Fileformat",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "My original side project was a logo search website [1], but I realized that it would work for other types of images besides logos.  And I had a lot of bookmarks to SVG icons repositories.  And I found a great domain name (seriously: are the domainers asleep?).  So allow me to introduce IconSear.ch!<p>I wrote it in <em>NodeJS</em>/Koa with server-side full-text search using Lunr.js, running on Google CloudRun.  Source and full list of credits: [2]<p>The index of icons is in a separate repo [3].  Contributions welcome!  Right now, all the sources are on github or gitlab, but it could support any website that can publish in the index format and allows hotlinking.<p>I know there are a ton of almost identical icon search websites (my list: [4]), and while mine is infinitely superior and perfect, I'm still interested in what you think!<p>[1] <a href=\"https://logosear.ch/search.html\" rel=\"nofollow\">https://logosear.ch/search.html</a><p>[2] <a href=\"https://github.com/VectorLogoZone/logosearch#credits\" rel=\"nofollow\">https://github.com/VectorLogoZone/logosearch#credits</a><p>[3] <a href=\"https://github.com/VectorLogoZone/git-svg-icons\" rel=\"nofollow\">https://github.com/VectorLogoZone/git-svg-icons</a><p>[4] <a href=\"https://iconsear.ch/alternatives/index.html\" rel=\"nofollow\">https://iconsear.ch/alternatives/index.html</a>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Show HN: Instant SVG icon search with over 50K+ icons indexed",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://iconsear.ch/search.html",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-27T09:09:14.000Z",
+      "title": null,
+      "url": null,
+      "author": "TuringNYC",
+      "points": null,
+      "story_text": null,
+      "comment_text": "I think developers can be devops also - but they are different skills you need to learn and keep up. Someone good at, say, nodejs or python data science may not be the best at CUDA build compilation on CentOS. And being good at both makes you less good at each unless you&#x27;re working 18hrs a day to keep up with everything.<p>There is also the case of ratios. An organization probably needs more developers in specific areas than DevOps, so with dedicated DevOps you could concentrate similar work from across several teams to a dedicated DevOps team that knows that work very well.",
+      "num_comments": null,
+      "story_id": 24599837,
+      "story_title": "How to properly manage SSH keys for server access",
+      "story_url": "https://www.paepper.com/blog/posts/how-to-properly-manage-ssh-keys-for-server-access/",
+      "parent_id": 24603745,
+      "created_at_i": 1601197754,
+      "_tags": [
+        "comment",
+        "author_TuringNYC",
+        "story_24599837"
+      ],
+      "objectID": "24605279",
+      "_highlightResult": {
+        "author": {
+          "value": "TuringNYC",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "I think developers can be devops also - but they are different skills you need to learn and keep up. Someone good at, say, <em>nodejs</em> or python data science may not be the best at CUDA build compilation on CentOS. And being good at both makes you less good at each unless you're working 18hrs a day to keep up with everything.<p>There is also the case of ratios. An organization probably needs more developers in specific areas than DevOps, so with dedicated DevOps you could concentrate similar work from across several teams to a dedicated DevOps team that knows that work very well.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "How to properly manage SSH keys for server access",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://www.paepper.com/blog/posts/how-to-properly-manage-ssh-keys-for-server-access/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-27T09:05:12.000Z",
+      "title": null,
+      "url": null,
+      "author": "dynamite-ready",
+      "points": null,
+      "story_text": null,
+      "comment_text": "Types are useful, but they are currently trending, so now, they might often be forced into situations where they might not be needed.<p>Programming languages and their type systems are tools, at the end of the day.<p>Occasionally, an overwrought system of types will slow you down, or quite possibly make simple changes impossible.<p>On another day, some other type declaration could save you hours of debugging, or speed up your program by orders of magnitude...<p>Simply put, I feel that many Java programs probably could happily be replaced by Python or Node JS.<p>On the other hand, some safety critical UI projects (or at least, some key portions of them) absolutely would benefit from Typescript or Elm.<p>I wish there was more discussion about when each is a better fit, rather than talking about how much worse A is than B.",
+      "num_comments": null,
+      "story_id": 24604943,
+      "story_title": "Things I Was Wrong About: Types",
+      "story_url": "https://v5.chriskrycho.com/journal/things-i-was-wrong-about/1-types/",
+      "parent_id": 24604943,
+      "created_at_i": 1601197512,
+      "_tags": [
+        "comment",
+        "author_dynamite-ready",
+        "story_24604943"
+      ],
+      "objectID": "24605257",
+      "_highlightResult": {
+        "author": {
+          "value": "dynamite-ready",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "Types are useful, but they are currently trending, so now, they might often be forced into situations where they might not be needed.<p>Programming languages and their type systems are tools, at the end of the day.<p>Occasionally, an overwrought system of types will slow you down, or quite possibly make simple changes impossible.<p>On another day, some other type declaration could save you hours of debugging, or speed up your program by orders of magnitude...<p>Simply put, I feel that many Java programs probably could happily be replaced by Python or <em>Node JS</em>.<p>On the other hand, some safety critical UI projects (or at least, some key portions of them) absolutely would benefit from Typescript or Elm.<p>I wish there was more discussion about when each is a better fit, rather than talking about how much worse A is than B.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Things I Was Wrong About: Types",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://v5.chriskrycho.com/journal/things-i-was-wrong-about/1-types/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-27T06:48:21.000Z",
+      "title": null,
+      "url": null,
+      "author": "angryredblock",
+      "points": null,
+      "story_text": null,
+      "comment_text": "If you want to be a solo&#x2F;technical founder, I&#x27;d consider learning to build web apps a great first step - it&#x27;s accessible, cross-platform, and flexible. There&#x27;s also no shortage of resources online. On the frontend, React is commonly used and generally a safe choice. On the backend, some nodejs with heroku or docker should give you a gentle introduction (with the added advantage that you&#x27;ll be learning the same language for both front and backend -- one less thing to worry about as you&#x27;re starting).",
+      "num_comments": null,
+      "story_id": 24604687,
+      "story_title": "Ask HN: Technical skills helpful for building a startup today",
+      "story_url": null,
+      "parent_id": 24604687,
+      "created_at_i": 1601189301,
+      "_tags": [
+        "comment",
+        "author_angryredblock",
+        "story_24604687"
+      ],
+      "objectID": "24604730",
+      "_highlightResult": {
+        "author": {
+          "value": "angryredblock",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "If you want to be a solo/technical founder, I'd consider learning to build web apps a great first step - it's accessible, cross-platform, and flexible. There's also no shortage of resources online. On the frontend, React is commonly used and generally a safe choice. On the backend, some <em>nodejs</em> with heroku or docker should give you a gentle introduction (with the added advantage that you'll be learning the same language for both front and backend -- one less thing to worry about as you're starting).",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Ask HN: Technical skills helpful for building a startup today",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-26T22:13:52.000Z",
+      "title": null,
+      "url": null,
+      "author": "rektide",
+      "points": null,
+      "story_text": null,
+      "comment_text": "If you had clicked the link, you&#x27;d see that it is primary a list of libraries. Admittedly I had not considered that Swift can use native C libraries. I&#x27;m not sure whether it makes sense to expect a wrapper library or not, whether that would help. But overall, I&#x27;m pretty sure no one is doing nor advancing towards HTTP3 in Swift at the moment, which makes me feel like the Swift community is not a serious player for general development.<p>Some trivia, not necessarily a recommendation: Node.js is the only language I know of working towards HTTP3 support in the platform (also in this link, evidence that I may be biased in my priorities):<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;nodejs&#x2F;node&#x2F;issues&#x2F;23064\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;nodejs&#x2F;node&#x2F;issues&#x2F;23064</a>",
+      "num_comments": null,
+      "story_id": 24593028,
+      "story_title": "Swift System Is Now Open Source",
+      "story_url": "https://swift.org/blog/swift-system/",
+      "parent_id": 24599400,
+      "created_at_i": 1601158432,
+      "_tags": [
+        "comment",
+        "author_rektide",
+        "story_24593028"
+      ],
+      "objectID": "24602595",
+      "_highlightResult": {
+        "author": {
+          "value": "rektide",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "If you had clicked the link, you'd see that it is primary a list of libraries. Admittedly I had not considered that Swift can use native C libraries. I'm not sure whether it makes sense to expect a wrapper library or not, whether that would help. But overall, I'm pretty sure no one is doing nor advancing towards HTTP3 in Swift at the moment, which makes me feel like the Swift community is not a serious player for general development.<p>Some trivia, not necessarily a recommendation: Node.js is the only language I know of working towards HTTP3 support in the platform (also in this link, evidence that I may be biased in my priorities):<p><a href=\"https://github.com/nodejs/node/issues/23064\" rel=\"nofollow\">https://github.com/<em>nodejs</em>/node/issues/23064</a>",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Swift System Is Now Open Source",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://swift.org/blog/swift-system/",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    },
+    {
+      "created_at": "2020-09-26T16:42:04.000Z",
+      "title": null,
+      "url": null,
+      "author": "timmy-turner",
+      "points": null,
+      "story_text": null,
+      "comment_text": "BTW, does anyone know a good migration library for nodejs&#x2F;typescript?<p>I was looking for one some months ago and kind of settled with Typeorm migrations but I don&#x27;t like them that much.\nIt feels clunky and doesn&#x27;t seem to provide tooling for saving the schema. Little things that annoy me are the timestamp names for the migrations and the needless &quot;extend this base class for your migration&quot; Java cargo-culting which feels so weird in JS&#x2F;TS.",
+      "num_comments": null,
+      "story_id": 24599307,
+      "story_title": "Clickhouse DB Migration Framework",
+      "story_url": "https://github.com/delium/clickhouse-migrator",
+      "parent_id": 24599307,
+      "created_at_i": 1601138524,
+      "_tags": [
+        "comment",
+        "author_timmy-turner",
+        "story_24599307"
+      ],
+      "objectID": "24600121",
+      "_highlightResult": {
+        "author": {
+          "value": "timmy-turner",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "comment_text": {
+          "value": "BTW, does anyone know a good migration library for <em>nodejs</em>/typescript?<p>I was looking for one some months ago and kind of settled with Typeorm migrations but I don't like them that much.\nIt feels clunky and doesn't seem to provide tooling for saving the schema. Little things that annoy me are the timestamp names for the migrations and the needless &quot;extend this base class for your migration&quot; Java cargo-culting which feels so weird in JS/TS.",
+          "matchLevel": "full",
+          "fullyHighlighted": false,
+          "matchedWords": [
+            "nodejs"
+          ]
+        },
+        "story_title": {
+          "value": "Clickhouse DB Migration Framework",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "story_url": {
+          "value": "https://github.com/delium/clickhouse-migrator",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      }
+    }
+  ],
+  "nbHits": 15253,
+  "page": 0,
+  "nbPages": 50,
+  "hitsPerPage": 20,
+  "exhaustiveNbHits": false,
+  "query": "nodejs",
+  "params": "advancedSyntax=true&analytics=true&analyticsTags=backend&query=nodejs",
+  "processingTimeMS": 7
+}
