@@ -11,8 +11,8 @@ docker-compose up -d
 
 - [X] Small web application
 - [X] Wireframe
-- [X] The app should have two separate components: the Server and the Client.
-- [X] Lists the articles in chronological order.
+- [X] The app should have two separate components: the Server and the Client
+- [X] Lists the articles in chronological order
 
 ## Server
 
@@ -36,12 +36,12 @@ docker-compose up -d
 - [X] The whole project has to be uploaded to GitLab
 - [X] Both artifacts (server and client) have to be Dockerized
 - [X] To start the project there should be a docker-compose that uses both images and the
-MongoDB image.
+MongoDB image
 
 ## Extras
 
-- [X] Tests and linters should be run on a GitLab pipeline (gitlab-ci.yml).
-- [ ] Docker multi-stage build.
+- [X] Tests and linters should be run on a GitLab pipeline (gitlab-ci.yml)
+- [ ] Docker multi-stage build
 
 ## Docs
 
