@@ -19,12 +19,12 @@ lint:
 test-api:
   script:
     - cd api
-    - MONGOMS_DEBUG=1 yarn test
+    - yarn test
 
 test-populate-posts:
   script:
     - cd populate-posts
-    - MONGOMS_DEBUG=1 yarn test
+    - yarn test
 
 test-cypress:
   image: cypress/base
