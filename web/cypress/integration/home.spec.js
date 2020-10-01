@@ -1,11 +1,36 @@
 /* eslint-disable functional/no-loop-statement */
 /// <reference types="cypress" />
 
+function diffOfDays(date) {
+  const todayDate = new Date()
+  const currentDate = new Date(date)
+  const currentDay = currentDate.getDay()
+  const todayDay = todayDate.getDay()
+
+  if (currentDay === todayDay) return 0
+  if (todayDay > 1 && todayDay - currentDay === 1) return 1
+  if (todayDay === 1) {
+    const currentMonth = currentDate.getMonth()
+    const todayMonth = todayDate.getMonth()
+    if (todayMonth - currentMonth > 2) return 2
+
+    const currentYear = currentDate.getFullYear()
+
+    const howManyDaysInCurrentMonth = new Date(currentYear, currentMonth, 0).getDate()
+    if (howManyDaysInCurrentMonth === currentDay) return 1
+    return 2
+  }
+  return 2
+}
+
 context('Home', () => {
   beforeEach(() => {
+    // const current = new Date(2020, 9, 30).getTime()
+    // cy.clock(current)
     cy.visit('/')
-    const current = new Date(2020, 9, 30).getTime()
-    cy.clock(current)
+    // cy.tick(1000)
+
+    // setInterval(() => cy.tick(1), 1)
     cy.restoreLocalStorageCache()
   })
 
@@ -68,31 +93,27 @@ context('Home', () => {
     cy.fixture('users').then((users) => {
       for (let i = 1; i <= 20; i++) {
         const user = users[i - 1]
-        const current = new Date(2020, 9, 30).getTime()
         const d = new Date(user.createdAt)
-        const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(d)
-        const day = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
-        const currentDay = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(current)
 
         // current day, show hour
-        if (currentDay === day) {
-          const hourFormat = new Intl.DateTimeFormat('en', { hour: 'numeric' }).format(d)
-          const minute = new Intl.DateTimeFormat('en', { minute: '2-digit' }).format(d)
-          const hour = hourFormat.replace(/^(\d+) (AM|PM)/, '$1')
-          const letters = hourFormat.replace(/^(\d+) (AM|PM)/, '$2')
+        if (diffOfDays(user.createdAt) === 0) {
+          const time = new Intl.DateTimeFormat('en', { hour: 'numeric', minute: '2-digit' })
+            .format(d)
+            .toLowerCase()
 
           cy.get(`li:nth-child(${i}) > div > span`)
-            .should('have.text', `${hour}:${minute} ${letters.toLowerCase()}`)
+            .should('have.text', time)
         }
 
         // yesterday
-        else if (Number(currentDay) === Number(day) + 1) {
+        else if (diffOfDays(user.createdAt) === 1) {
           cy.get(`li:nth-child(${i}) > div > span`).should('have.text', 'Yesterday')
         }
 
         // show day
         else {
-          cy.get(`li:nth-child(${i}) > div > span`).should('have.text', `${month} ${day}`)
+          cy.get(`li:nth-child(${i}) > div > span`).should('have.text',
+            new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' }).format(d))
         }
       }
     })
@@ -101,7 +122,7 @@ context('Home', () => {
   it('on remove post', () => {
     for (let i = 1; i <= 20; i++) {
       cy.get('li:nth-child(1)').trigger('mouseover')
-      cy.wait(1000)
+      // cy.wait(1000)
       cy.get('li div button', { force: true }).click()
       cy.get('li').should('have.length', 20 - i)
     }

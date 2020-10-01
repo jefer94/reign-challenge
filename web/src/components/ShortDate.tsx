@@ -6,30 +6,46 @@ type ShortDateProps = {
   readonly isHover: boolean
 }
 
-export default function ShortDate({ date, isHover }: ShortDateProps): ReactElement {
-  const current = new Date()
-  const d = new Date(date)
-  const month = new Intl.DateTimeFormat('en', { month: 'short' }).format(d)
-  const day = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+function diffOfDays(date: string): number {
+  const todayDate = new Date()
+  const currentDate = new Date(date)
+  const currentDay = currentDate.getDay()
+  const todayDay = todayDate.getDay()
 
-  const currentDay = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(current)
+  if (currentDay === todayDay) return 0
+  if (todayDay > 1 && todayDay - currentDay === 1) return 1
+  if (todayDay === 1) {
+    const currentMonth = currentDate.getMonth()
+    const todayMonth = todayDate.getMonth()
+    if (todayMonth - currentMonth > 2) return 2
+
+    const currentYear = currentDate.getFullYear()
+
+    const howManyDaysInCurrentMonth = new Date(currentYear, currentMonth, 0).getDate()
+    if (howManyDaysInCurrentMonth === currentDay) return 1
+    return 2
+  }
+  return 2
+}
+
+export default function ShortDate({ date, isHover }: ShortDateProps): ReactElement {
+  const d = new Date(date)
 
   // current day, show hour
-  if (currentDay === day) {
-    const hourFormat = new Intl.DateTimeFormat('en', { hour: 'numeric' }).format(d)
-    const minute = new Intl.DateTimeFormat('en', { minute: '2-digit' }).format(d)
-    const hour = hourFormat.replace(/^(\d+) (AM|PM)/, '$1')
-    const letters = hourFormat.replace(/^(\d+) (AM|PM)/, '$2')
+  if (diffOfDays(date) === 0) {
+    const time = new Intl.DateTimeFormat('en', { hour: 'numeric', minute: '2-digit' })
+      .format(d)
+      .toLowerCase()
 
     return (
       <span className={isHover ? style.dateHover : style.date}>
-        {`${hour}:${minute} ${letters.toLowerCase()}`}
+        {time}
       </span>
     )
   }
 
   // yesterday
-  if (Number(currentDay) === Number(day) + 1) {
+  if (diffOfDays(date) === 1) {
     return (
       <span className={isHover ? style.dateHover : style.date}>
         Yesterday
@@ -40,9 +56,7 @@ export default function ShortDate({ date, isHover }: ShortDateProps): ReactEleme
   // show day
   return (
     <span className={isHover ? style.dateHover : style.date}>
-      {month}
-      {' '}
-      {day}
+      {new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' }).format(d)}
     </span>
   )
 }
