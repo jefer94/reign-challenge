@@ -9,9 +9,6 @@ default:
     - yarn
     - cd ..
 
-services:
-  - mongo
-
 eslint:
   script:
     - yarn lint
