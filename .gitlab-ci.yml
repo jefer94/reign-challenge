@@ -8,6 +8,9 @@ default:
     - cd web
     - yarn
     - cd ..
+    - cd populate-posts
+    - yarn
+    - cd ..
 
 lint:
   script:
@@ -16,12 +19,12 @@ lint:
 test-api:
   script:
     - cd api
-    - yarn test
+    - MONGOMS_DEBUG=1 yarn test
 
 test-populate-posts:
   script:
     - cd populate-posts
-    - yarn test
+    - MONGOMS_DEBUG=1 yarn test
 
 test-cypress:
   image: cypress/base
