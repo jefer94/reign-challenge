@@ -102,7 +102,7 @@ context('Home', () => {
     for (let i = 1; i <= 20; i++) {
       cy.get('li:nth-child(1)').trigger('mouseover')
       cy.wait(1000)
-      cy.get('li div button').click()
+      cy.get('li div button', { force: true }).click()
       cy.get('li').should('have.length', 20 - i)
     }
   })

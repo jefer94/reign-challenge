@@ -1,5 +1,5 @@
 default:
-  image: node:alpine
+  image: node
   before_script:
     - yarn
     - cd api
