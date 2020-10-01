@@ -3,12 +3,6 @@
 /* eslint-disable no-restricted-syntax */
 import mongoose from 'mongoose'
 
-export function clearCollections(): void {
-  for (const collection in mongoose.connection.collections) {
-    mongoose.connection.collections[collection].remove({})
-  }
-}
-
 /** Database connection. */
 export default function db(connection = 'mongodb://localhost/reign'): Promise<typeof mongoose> {
   return mongoose.connect(connection, { useNewUrlParser: true, useUnifiedTopology: true })

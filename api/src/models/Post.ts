@@ -1,6 +1,7 @@
 import { Document, Schema, model } from 'mongoose'
 
 export type PostFields = {
+  readonly _id: string
   readonly createdAt: string
   readonly title?: string
   readonly url?: string
@@ -15,7 +16,7 @@ export type PostFields = {
   readonly parentId?: number
   readonly createdAtI: number
   readonly tags: readonly string[]
-  readonly objectID: number
+  readonly objectID: string
 }
 
 export type PostDocument = Document & PostFields
@@ -35,7 +36,7 @@ const schema = new Schema({
   parentId: { type: Number },
   createdAtI: { type: Number, required: true },
   tags: [{ type: String }],
-  objectID: { type: Number, required: true, unique: true }
+  objectID: { type: String, required: true, unique: true }
 }, { versionKey: false })
 
 export const Post = model<PostDocument>('Post', schema)

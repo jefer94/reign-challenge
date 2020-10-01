@@ -3,13 +3,8 @@
 /* eslint-disable no-restricted-syntax */
 import mongoose from 'mongoose'
 
-export function clearCollections(): void {
-  for (const collection in mongoose.connection.collections) {
-    mongoose.connection.collections[collection].remove({})
-  }
-}
-
 /** Database connection. */
-export default async function db(connection = 'mongodb://localhost/reign'): Promise<void> {
-  if (process.env.NODE_ENV !== 'cypress') await mongoose.connect(connection, { useNewUrlParser: true, useUnifiedTopology: true })
+export default function db(connection = 'mongodb://localhost/reign'): Promise<typeof mongoose | null> {
+  if (process.env.NODE_ENV !== 'cypress') return mongoose.connect(connection, { useNewUrlParser: true, useUnifiedTopology: true })
+  return Promise.resolve(null)
 }
