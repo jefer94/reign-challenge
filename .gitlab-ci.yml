@@ -9,11 +9,21 @@ default:
     - yarn
     - cd ..
 
-eslint:
+lint:
   script:
     - yarn lint
 
-cypress:
+test-api:
+  script:
+    - cd api
+    - yarn test
+
+test-populate-posts:
+  script:
+    - cd populate-posts
+    - yarn test
+
+test-cypress:
   image: cypress/base
   script:
     - yarn ci:p2p:headless
