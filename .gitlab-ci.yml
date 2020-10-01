@@ -14,9 +14,9 @@ services:
 
 eslint:
   script:
-    - yarn
     - yarn lint
 
 cypress:
+  image: cypress/base
   script:
     - yarn ci:p2p:headless
