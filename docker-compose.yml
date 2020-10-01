@@ -12,8 +12,6 @@ services:
 
   web:
     image: reign/web
-    environment:
-      - MONGO=mongodb://mongo/reign
     ports:
       - 3000:3000
 

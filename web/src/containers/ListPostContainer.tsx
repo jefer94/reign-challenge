@@ -1,4 +1,5 @@
 import { ReactElement, useEffect, useState } from 'react'
+import { url } from '@chocolab/functional'
 import useFetch from 'use-http'
 import PostList from '../components/PostList'
 
@@ -24,7 +25,8 @@ export type Post = {
 const removePostsKey = '__REMOVE_POSTS_KEY__'
 
 export default function ListPostContainer(): ReactElement {
-  const { data = [], loading } = useFetch<readonly Post[]>('http://localhost:5000/posts', [])
+  const resourceUrl = url(process.env.NEXT_PUBLIC_HN || 'http://localhost:5000/', 'posts')
+  const { data = [], loading } = useFetch<readonly Post[]>(resourceUrl, [])
   const [posts, setPosts] = useState<readonly Post[]>([])
 
   function remove(id: number): void {
